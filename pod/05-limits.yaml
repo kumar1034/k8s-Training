@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: LimitRange
 metadata:
-  name: cpu-resource-LimitRangec-onstraint-pod
+  name: cpu-limitrange-constraint-pod
   namespace: roboshop
 spec:
   limits:
