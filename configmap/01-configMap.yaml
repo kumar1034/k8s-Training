@@ -4,5 +4,5 @@ metadata:
   name: k8s-config
   namespace: roboshop
 data:
-  course_name: k8s
-  course_duration: 30hrs
+  course-name: k8s
+  course-duration: 30hrs

@@ -12,14 +12,14 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: k8s-config
-          key: course_name
+          key: course-name
     - name: trainer
       value: kumar
     - name: duration
       valueFrom:
         configMapKeyRef:
           name: k8s-config
-          key: course_duration
+          key: course-duration
     resources:
       limits:
         memory: "128Mi"
