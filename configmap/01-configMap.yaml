@@ -6,3 +6,7 @@ metadata:
 data:
   course-name: k8s
   course-duration: 25hrs
+
+# kubectl apply -f configmap <config name> -n roboshop
+# kubectl delete -f configmap <config name> -n roboshop
+# kubectl describe configmap <config name> -n roboshop

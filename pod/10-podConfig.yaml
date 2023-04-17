@@ -43,6 +43,3 @@ spec:
         cpu: "500m"
     ports:
       - containerPort: 89
-
-# kubectl apply -f configmap k8s-config -n roboshop
-# kubectl delete -f configmap k8s-config -n roboshop
