@@ -4,7 +4,7 @@ metadata:
   name: label-pod
   namespace: roboshop
   labels:
-    course: kubernets
+    course: kubernetes
     duration: 25hrs
     trainer: kumar
 spec:
