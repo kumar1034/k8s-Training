@@ -24,7 +24,7 @@ spec:
     server: web-app-nginx
   ports:
   - protocol: TCP
-    port: 92
+    port: 80
     targetPort: 91
 ---
 apiVersion: v1
