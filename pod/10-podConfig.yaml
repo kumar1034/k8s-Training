@@ -7,7 +7,7 @@ metadata:
     name: nginx
 spec:
   containers:
-  - name: config-pod
+  - name: nginx
     image: nginx
     env:
       - name: course
