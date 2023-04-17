@@ -7,6 +7,8 @@ spec:
   containers:
     - name: nginx
       image: nginx
+      ports:
+        - containerPort: 87
       resources:
         requests:
           memory: "64Mi"

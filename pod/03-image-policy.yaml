@@ -9,4 +9,4 @@ spec:
       imagePullPolicy: Always
       name: nginx
       ports:
-      - containerPort: 81
+      - containerPort: 82
