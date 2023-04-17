@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-app-nginx
+  labels:
+    name: web-app-nginx
+spec:
+  containers:
+  - name: myapp
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 91
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-nginx-service
+spec:
+  selector:
+    name: web-app-nginx
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 91
