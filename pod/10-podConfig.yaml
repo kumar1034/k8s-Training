@@ -13,8 +13,6 @@ spec:
         configMapKeyRef:
           name: k8s-config
           key: course-name
-    - name: trainer
-      value: kumar
     - name: duration
       valueFrom:
         configMapKeyRef:
