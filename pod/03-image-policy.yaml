@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginxv1
+  name: nginx-image-policy-pod
   namespace: roboshop
 spec:
   containers:
