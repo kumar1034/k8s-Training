@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: web-app-nginx
   labels:
-    name: web-app-nginx
+    server: web-app-nginx
 spec:
   containers:
   - name: myapp
@@ -21,7 +21,7 @@ metadata:
   name: web-app-nginx-service
 spec:
   selector:
-    name: web-app-nginx
+    server: web-app-nginx
   ports:
   - protocol: TCP
     port: 80
@@ -37,6 +37,7 @@ spec:
   containers:
   - name: almalinux
     image: almalinux
+    command: ["sleep","1000000"]
     resources:
       limits:
         memory: "128Mi"
