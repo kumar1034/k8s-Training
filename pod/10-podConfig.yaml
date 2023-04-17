@@ -3,11 +3,9 @@ kind: Pod
 metadata:
   name: config-pod
   namespace: roboshop
-  labels:
-    name: nginx
 spec:
   containers:
-  - name: nginx
+  - name: nginx_config_pod
     image: nginx
     env:
       - name: course
