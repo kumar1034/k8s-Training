@@ -16,6 +16,10 @@ spec:
         value: kumar
       - name: duration
         value: 30hrs
+      - name: DB_HOST
+        value: ab.domain.com
+      - name: username
+        value: kumar        
     resources:
       limits:
         memory: "128Mi"
