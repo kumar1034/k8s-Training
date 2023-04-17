@@ -26,3 +26,20 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 91
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-pod
+  labels:
+    purpose: debug
+spec:
+  containers:
+  - name: almalinux
+    image: almalinux
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 91
