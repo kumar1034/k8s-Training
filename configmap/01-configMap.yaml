@@ -5,4 +5,4 @@ metadata:
   namespace: roboshop
 data:
   course-name: k8s
-  course-duration: 30hrs
+  course-duration: 25hrs
