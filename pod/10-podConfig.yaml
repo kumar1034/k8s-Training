@@ -20,13 +20,5 @@ spec:
           configMapKeyRef:
             name: k8s-config
             key: course_duration
-      - name: DB_HOST
-        value: ab.domain.com
-      - name: username
-        value: kumar        
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
     ports:
       - containerPort: 89
