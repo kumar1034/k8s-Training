@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod
+  namespace: roboshop
+  labels:
+    name: nginx
+spec:
+  containers:
+  - name: config-pod
+    image: nginx
+    env:
+      - name: course
+        valueFrom:
+          configMapKeyRef:
+            name: k8s-config
+            key: course_name
+      - name: trainer
+        value: kumar
+      - name: duration
+        valueFrom:
+          configMapKeyRef:
+            name: k8s-config
+            key: course_duration
+      - name: DB_HOST
+        value: ab.domain.com
+      - name: username
+        value: kumar        
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 89
