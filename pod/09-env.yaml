@@ -14,6 +14,8 @@ spec:
         value: docker
       - name: trainer
         value: kumar
+      - name: duration
+        value: 30hrs
     resources:
       limits:
         memory: "128Mi"
