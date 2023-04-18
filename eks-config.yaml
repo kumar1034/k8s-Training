@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: kube-cluster
-  region: ap-south-1
+  region: us-east-1
 
 managedNodeGroups:
 
@@ -11,5 +11,5 @@ managedNodeGroups:
 - name: spot-1 #cluster node group name
   spot: true
   ssh:
-    publicKeyName: sasi_mumbai
+    publicKeyName: sasi12
     
